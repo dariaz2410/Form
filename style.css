@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(50, 50, 100 , .7)
+}
+
+.form-help{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 650px;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 12px;
+    background: #F5F5FA;
+    box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.50);
+}
+
+.header-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-form{
+    margin: 0;
+    font-size: 38px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.close{
+    width: 32px;
+    height: 32px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+input, textarea{
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    background: #FFF;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea{
+    height: 130px;
+}
+
+.header-contacts{
+    margin: 0;
+    color: #B3B3BA;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button-send{
+    padding: 18px 30px;
+    text-align: center;
+    border-radius: 12px;
+    background: #24A3FF;
+    border: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;  
+    box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #B3B3BA;
+}
